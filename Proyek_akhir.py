@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from joblib import load
 
 # Loading the Model and Scaler File
-model_loaded = load("model.joblib")
+model_loaded = load('model.joblib')
 scaler = load(scaler.joblib)
 
 # Mean Values for the other features columns
