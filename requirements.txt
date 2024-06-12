@@ -24,7 +24,6 @@ gitdb==4.0.11
 GitPython==3.1.43
 greenlet==3.0.3
 idna==3.7
-importlib_metadata==7.1.0
 ipykernel==6.29.4
 ipython==8.24.0
 itsdangerous==2.2.0
