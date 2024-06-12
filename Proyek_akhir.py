@@ -51,10 +51,10 @@ mean_values = {
 st.title('Status Predictions (Graduated, Enrolled & Dropout) For Students')
 
 # Value Imputation for the Prediction Columns
-curricular_units_1st_sem_approved = st.number_input('Berapa banyak mata kuliah yang diambil pada kurikulum Semester 1', min_value=0)
-curricular_units_1st_sem_grade = st.number_input('Rata-Rata nilai pada Semester 1', min_value=0.0, format="%.2f")
-curricular_units_2nd_sem_approved = st.number_input('Berapa banyak mata kuliah yang diambil pada Semester 2', min_value=0)
-curricular_units_2nd_sem_grade = st.number_input('Rata-Rata nilai pada Semester 2', min_value=0.0, format="%.2f")
+curricular_units_1st_sem_approved = st.number_input('Berapa banyak mata kuliah yang diambil pada kurikulum Semester 1', min_value=0, max_value=7)
+curricular_units_1st_sem_grade = st.number_input('Rata-Rata nilai pada Semester 1', min_value=0.0, max_value=19, format="%.2f")
+curricular_units_2nd_sem_approved = st.number_input('Berapa banyak mata kuliah yang diambil pada Semester 2', min_value=0, max_value=7)
+curricular_units_2nd_sem_grade = st.number_input('Rata-Rata nilai pada Semester 2', min_value=0.0, max_value=19, format="%.2f")
 
 # Making a new dataframe from the user's inputation
 data_baru = pd.DataFrame({
