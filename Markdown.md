@@ -63,4 +63,4 @@ streamlit run app.py
 4. **Setelah semua nilai input terisi, klik tombol "Prediksi" yang tersedia di halaman aplikasi.**
 
 ## Link Streamlit
--  
+-  https://proyek-akhir-nugie.streamlit.app/
