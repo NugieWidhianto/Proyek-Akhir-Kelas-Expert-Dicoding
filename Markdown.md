@@ -1,17 +1,17 @@
 # Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
 
 ## Business Understanding
-Perusahaan Edutech Jaya Jaya Institut menghadapi tantangan dalam mempertahankan siswa untuk menyelesaikan pendidikan mereka, yang terlihat dari tingginya tingkat dropout (keluarnya siswa sebelum lulus). Tingginya dropout dapat menyebabkan reputasi institusi menurun dan kehilangan potensi lulusan yang berkualitas. Tujuan dari proyek ini adalah untuk menganalisis faktor-faktor yang mempengaruhi dropout dan membuat model prediktif untuk mengidentifikasi siswa yang berisiko tinggi meninggalkan institusi.
+Perusahaan Edutech Jaya Jaya Institut menghadapi kesulitan dalam mempertahankan siswa untuk menyelesaikan pendidikan mereka, yang tercermin dari tingginya tingkat siswa yang keluar sebelum lulus. Tingkat dropout yang tinggi dapat mengakibatkan penurunan reputasi institusi dan potensi kehilangan lulusan yang berkualitas. Tujuan proyek ini adalah untuk melakukan analisis faktor-faktor yang berdampak pada dropout dan mengembangkan model prediktif untuk mengidentifikasi siswa yang berisiko tinggi untuk meninggalkan institusi.
 
 ## Permasalahan Bisnis
-1. **Tingginya Tingkat Dropout:** Jaya Jaya Institut memiliki tingkat dropout yang tinggi. Jumlah siswa yang tidak menyelesaikan pendidikan mereka merupakan masalah serius yang dapat mempengaruhi reputasi dan kinerja institusi.
+1. **Tingginya Tingkat dan Angka Dropout Pada Institusi:** Jaya Jaya Institut memiliki tingkat dropout yang tinggi. Jumlah siswa yang tidak menyelesaikan pendidikan mereka merupakan masalah serius yang dapat mempengaruhi reputasi dan kinerja institusi.
 
 ## Cakupan Proyek
 Proyek ini mencakup beberapa aspek utama:
 - **Analisis Data Siswa:** Memahami distribusi dan karakteristik data siswa.
 - **Preprocessing Data:** Membersihkan dan mempersiapkan data untuk analisis lebih lanjut.
 - **Modeling:** Membangun dan mengevaluasi model prediktif menggunakan algoritma Random Forest.
-- **Visualisasi Data:** Membuat visualisasi untuk memahami pola dropout berdasarkan berbagai fitur siswa.
+- **Visualisasi Data:** Membuat visualisasi untuk memahami pola dropout berdasarkan berbagai fitur siswa menggunakan PowerBI.
 
 ## Persiapan
 **Sumber data:**
@@ -28,35 +28,39 @@ python -m venv myenv
 pip install -r requirements.txt
 
 ## Business Dashboard
-Dashboard ini memberikan visualisasi mengenai distribusi dropout berdasarkan berbagai fitur seperti nilai semester pertama dan kedua, serta jumlah kursus yang diambil. Visualisasi ini membantu dalam memahami pola dropout dan faktor-faktor yang mempengaruhinya.
+Dashboard ini menyajikan gambaran visual mengenai data umum seperti jumlah siswa, tingkat kelulusan, dan distribusi dropout berdasarkan variabel seperti nilai semester pertama dan kedua, serta jumlah mata kuliah yang diambil oleh mahasiswa. Visualisasi ini bermanfaat untuk memahami pola dropout, faktor-faktor yang berpengaruh, serta informasi penting dalam dataset kita.
 
 ## Conclusion
-Dari analisis yang dilakukan, ditemukan bahwa faktor-faktor seperti nilai pada semester pertama dan kedua, serta jumlah kursus yang diambil memiliki pengaruh signifikan terhadap tingkat dropout. Model Random Forest yang dibangun menunjukkan kinerja yang baik dalam memprediksi siswa yang berisiko tinggi meninggalkan institusi, dengan akurasi sebesar 75%.
+Berdasarkan analisis yang dilakukan, disimpulkan bahwa faktor-faktor seperti nilai pada semester awal dan semester kedua, serta jumlah mata kuliah yang diambil berpengaruh signifikan terhadap tingkat siswa yang drop out. Model Random Forest yang dikembangkan menunjukkan kemampuan yang baik dalam memprediksi siswa yang berpotensi besar untuk meninggalkan institusi, dengan tingkat akurasi sebesar 76%.
 
 ## Rekomendasi Action Items
 Berikut beberapa rekomendasi action items yang dapat dilakukan perusahaan guna menyelesaikan permasalahan:
 
-1. **Meningkatkan Kualitas Pengajar:** Karena nilai pada semester pertama dan kedua merupakan faktor yang paling krusial dalam status kelulusan siswa, meningkatkan kualitas pengajar dapat membantu dalam meningkatkan prestasi akademik siswa. Pengajar yang berkualitas dapat memberikan bimbingan yang lebih baik dan membantu siswa memahami materi dengan lebih baik dan mendapatkan nilai yang lebih baik pada tiap semester.
+1. **Riset dan Survey tentang Kurikulum yang Diberikan Kepada Mahasiswa:**
+Menyarankan untuk melakukan riset mendalam dan survey terhadap kurikulum yang diberikan kepada mahasiswa. Melibatkan mahasiswa dalam penilaian terhadap relevansi, kedalaman, serta keefektifan materi yang diajarkan dapat membantu institusi untuk mengevaluasi kebutuhan dan perbaikan dalam penyusunan kurikulum. Dengan demikian, dapat memastikan bahwa kurikulum yang diselenggarakan sesuai dengan tuntutan perkembangan ilmu di bidang yang diajarkan dan dapat memberikan pengalaman belajar yang lebih bermakna bagi mahasiswa.
 
-2. **Memberikan Standarisasi pada Jumlah Kursus yang Diambil:** Jumlah kursus yang diambil memiliki korelasi dengan tingkat dropout. Siswa yang mengambil sedikit kursus lebih rawan untuk dropout. Oleh karena itu, memberikan standarisasi pada jumlah kursus yang diambil dapat membantu mengurangi tingkat dropout. Misalnya, menetapkan jumlah minimum kursus yang harus diambil oleh setiap siswa dalam satu semester.
+2. **Pemberian Pelajaran Tambahan ataupun Perhatian Tambahan Kepada Mahasiswa dengan Nilai Rata-Rata yang Rendah:**
+Mengusulkan untuk memberikan perhatian tambahan dan bantuan kepada mahasiswa yang memiliki nilai rata-rata yang rendah. Dengan mengidentifikasi mahasiswa yang berisiko terhadap tingkat dropout dan memberikan bimbingan tambahan, program akademik yang disesuaikan dengan kebutuhan individu, atau pelatihan keterampilan supaya mereka dapat meningkatkan prestasi akademik mereka. Dengan demikian, dapat membantu meningkatkan kesempatan kelulusan mereka dan mengurangi tingkat dropout di institusi tersebut.
+
 
 ## Prediksi dan Penggunaan Model
-1. **Pastikan Anda memiliki file berikut dalam satu folder:**
-    - model.joblib
-    - scaler.joblib
-    - Script Python Streamlit (Streamlit.py)
+1. **Pastikan File Berikut Tersedia dalam Satu Folder:**
+> model.joblib
+> scaler.joblib
+Mulai Terminal atau Command Prompt
 
-2. **Buka terminal atau command prompt**
-3. **Arahkan direktori ke folder yang berisi app.py, model.joblib, dan scaler.joblib.**
-4. **Jalankan perintah berikut untuk memulai aplikasi Streamlit:**
-    - streamlit run app.py
-5. **Mengisi Nilai Input di Streamlit:**
-Di halaman aplikasi, Anda akan melihat input form untuk memasukkan nilai pada empat kolom utama:
-Berapa banyak kursus yang diambil pada kurikulum Semester 1: Masukkan jumlah kursus yang diambil pada semester 1 (contoh: 5).
-- Rata-rata nilai Semester 1: Masukkan rata-rata nilai pada semester 1 (contoh: 2.5).
-- Berapa banyak kursus yang diambil pada Semester 2: Masukkan jumlah kursus yang diambil pada semester 2 (contoh: 5).
-- Rata-rata nilai Semester 2: Masukkan rata-rata nilai pada semester 2 (contoh: 2.5).
-- Setelah semua nilai input diisi, tekan tombol "Prediksi" yang ada di halaman aplikasi.
+2. **Arahkan Direktori ke Lokasi Folder yang Berisi app.py, model.joblib, dan scaler.joblib.**
+
+Jalankan Perintah Berikut untuk Memulai Aplikasi Streamlit:
+streamlit run app.py
+
+3. **Input Nilai pada Aplikasi Streamlit: Pada halaman aplikasi, akan terdapat formulir input untuk memasukkan nilai pada empat kolom utama:**
+> Jumlah kursus yang diambil pada Semester 1: Masukkan jumlah kursus yang diambil pada semester 1 (contoh: 5).
+> Rata-rata nilai Semester 1: Masukkan rata-rata nilai pada semester 1 (contoh: 2.5).
+> Jumlah kursus yang diambil pada Semester 2: Masukkan jumlah kursus yang diambil pada semester 2 (contoh: 5).
+> Rata-rata nilai Semester 2: Masukkan rata-rata nilai pada semester 2 (contoh: 2.5).
+
+4. **Setelah semua nilai input terisi, klik tombol "Prediksi" yang tersedia di halaman aplikasi.**
 
 ## Link Streamlit
-- https://projectakhirdsmasterwicak.streamlit.app/ 
+-  
