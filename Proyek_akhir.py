@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from joblib import load
 
 # Loading the Model and Scaler File
-model_loaded = load('model.joblib')
+model_loaded = load('https://github.com/NugieWidhianto/Proyek-Akhir-Kelas-Expert-Dicoding/blob/3f7cac1ab578227308261d0186f1077975edac7c/model.joblib')
 scaler = load('scaler.joblib')
 
 # Mean Values for the other features columns
