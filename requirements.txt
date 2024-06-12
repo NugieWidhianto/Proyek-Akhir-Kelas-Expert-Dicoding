@@ -51,7 +51,6 @@ plotly==5.22.0
 prompt-toolkit==3.0.43
 protobuf==4.25.3
 psutil==5.9.8
-psycopg2==2.9.9
 pure-eval==0.2.2
 pyarrow==16.1.0
 pydeck==0.9.1
